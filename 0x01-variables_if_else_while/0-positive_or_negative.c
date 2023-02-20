@@ -2,20 +2,27 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - assign a random to int n everytime is executes and print it
- * Return: Always (0) success
+ * main - Entry point
+ * Discription: Check if the number is positive or negative
+ * Return: always 0
  */
 int main(void)
 {
-	int n:
+	int n;
 
-		srand(time(0));
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
-		printf("% is positive\n", n);
+	{
+		printf("%d is positive\n", n);
+	}
 	else if (n == 0)
+	{
 		printf("%d is zero\n", n);
-	else if (n < 0)
+	}
+	else
+	{
 		printf("%d is negative\n", n);
+	}
 	return (0);
 }
