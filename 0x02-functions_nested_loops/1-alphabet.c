@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * main - entry point
- * Descrtiption: Write a function that prints the alphabet, in lowercase
- * Return: Always 0
+ * print_alphabet - print all alphabets in lowercase
  */
 
 void print_alphabet(void)
 {
 	char c;
+
 	for (c = 'a'; c <= '2'; c++)
 	{
 		_putchar(c);
