@@ -5,10 +5,11 @@
  * using at most n bytes from src
  * @dest: input value
  * @src: input value
+ * @n: The number of bytes from src to be appended to dest.
  * Return: dest
  */
 
-char *_strncat(char *dest, char *src, int n);
+char *_strncat(char *dest, char *src, int n)
 {
 	int i;
 	int j;
